@@ -1,14 +1,14 @@
 begin 
   require 'jeweler' 
   Jeweler::Tasks.new do |s| 
-    s.name = "rspec-rails23" 
+    s.name = "vibes-rspec-rails23" 
     s.summary = "Rspec Rails for 2.3.5"
-    s.email = "rsanheim@gmail.com" 
-    s.homepage = "http://github.com/rsanheim/rspec-rails23" 
+    s.email = ["matt.campbell@vibes.com", "lance.cooper@vibes.com"]
+    s.homepage = "http://github.com/vibes/rspec-rails23" 
     s.description = "Rails 2.3.5 Extension for Rspec 2"
-    s.authors = ["Rob Sanheim"] 
+    s.authors = ["Matt Campbell", "Lance Cooper"] 
     s.files =  FileList["[A-Z]*", "{bin,lib,spec}/**/*"] 
-    s.add_dependency "actionpack", '~> 2.3.0'
+    s.add_dependency "actionpack", '~> 2.3.5'
     s.add_dependency "rspec", '~> 2.8.0'
     s.add_development_dependency "sdoc"
     s.add_development_dependency "sdoc-helpers"

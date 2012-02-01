@@ -4,14 +4,14 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{rspec-rails23}
-  s.version = "0.2.0"
+  s.name = %q{vibes-rspec-rails23}
+  s.version = "0.3.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Rob Sanheim"]
+  s.authors = ["Matt Campbell", "Lance Cooper"]
   s.date = %q{2012-02-01}
   s.description = %q{Rails 2.3.5 Extension for Rspec 2}
-  s.email = %q{rsanheim@gmail.com}
+  s.email = ["matt.campbell@vibes.com", "lance.cooper@vibes.com"]
   s.extra_rdoc_files = [
     "LICENSE",
     "README"
@@ -39,7 +39,7 @@ Gem::Specification.new do |s|
     "spec/lib/rspec/rails23/configuration_spec.rb",
     "spec/spec_helper.rb"
   ]
-  s.homepage = %q{http://github.com/rsanheim/rspec-rails23}
+  s.homepage = %q{http://github.com/vibes/rspec-rails23}
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.5.2}
   s.summary = %q{Rspec Rails for 2.3.5}
@@ -48,10 +48,16 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<rspec-rails23>, [">= 0"])
+      s.add_runtime_dependency(%q<vibes-rspec-rails23>, [">= 0"])
       s.add_development_dependency(%q<jeweler>, ["~> 1.8.3"])
       s.add_development_dependency(%q<mocha>, ["= 0.9.9"])
       s.add_development_dependency(%q<sdoc>, [">= 0"])
+      s.add_development_dependency(%q<rdiscount>, [">= 0"])
+      s.add_development_dependency(%q<sdoc>, [">= 0"])
+      s.add_development_dependency(%q<sdoc-helpers>, [">= 0"])
+      s.add_development_dependency(%q<rdiscount>, [">= 0"])
+      s.add_development_dependency(%q<sdoc>, [">= 0"])
+      s.add_development_dependency(%q<sdoc-helpers>, [">= 0"])
       s.add_development_dependency(%q<rdiscount>, [">= 0"])
       s.add_runtime_dependency(%q<actionpack>, ["~> 2.3.0"])
       s.add_runtime_dependency(%q<rspec>, ["~> 2.8.0"])
@@ -59,10 +65,16 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<sdoc-helpers>, [">= 0"])
       s.add_development_dependency(%q<rdiscount>, [">= 0"])
     else
-      s.add_dependency(%q<rspec-rails23>, [">= 0"])
+      s.add_dependency(%q<vibes-rspec-rails23>, [">= 0"])
       s.add_dependency(%q<jeweler>, ["~> 1.8.3"])
       s.add_dependency(%q<mocha>, ["= 0.9.9"])
       s.add_dependency(%q<sdoc>, [">= 0"])
+      s.add_dependency(%q<rdiscount>, [">= 0"])
+      s.add_dependency(%q<sdoc>, [">= 0"])
+      s.add_dependency(%q<sdoc-helpers>, [">= 0"])
+      s.add_dependency(%q<rdiscount>, [">= 0"])
+      s.add_dependency(%q<sdoc>, [">= 0"])
+      s.add_dependency(%q<sdoc-helpers>, [">= 0"])
       s.add_dependency(%q<rdiscount>, [">= 0"])
       s.add_dependency(%q<actionpack>, ["~> 2.3.0"])
       s.add_dependency(%q<rspec>, ["~> 2.8.0"])
@@ -71,10 +83,16 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<rdiscount>, [">= 0"])
     end
   else
-    s.add_dependency(%q<rspec-rails23>, [">= 0"])
+    s.add_dependency(%q<vibes-rspec-rails23>, [">= 0"])
     s.add_dependency(%q<jeweler>, ["~> 1.8.3"])
     s.add_dependency(%q<mocha>, ["= 0.9.9"])
     s.add_dependency(%q<sdoc>, [">= 0"])
+    s.add_dependency(%q<rdiscount>, [">= 0"])
+    s.add_dependency(%q<sdoc>, [">= 0"])
+    s.add_dependency(%q<sdoc-helpers>, [">= 0"])
+    s.add_dependency(%q<rdiscount>, [">= 0"])
+    s.add_dependency(%q<sdoc>, [">= 0"])
+    s.add_dependency(%q<sdoc-helpers>, [">= 0"])
     s.add_dependency(%q<rdiscount>, [">= 0"])
     s.add_dependency(%q<actionpack>, ["~> 2.3.0"])
     s.add_dependency(%q<rspec>, ["~> 2.8.0"])

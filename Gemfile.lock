@@ -1,10 +1,10 @@
 PATH
   remote: .
   specs:
-    rspec-rails23 (0.2.0)
+    vibes-rspec-rails23 (0.3.0)
       actionpack (~> 2.3.0)
       rspec (~> 2.8.0)
-      rspec-rails23
+      vibes-rspec-rails23
 
 GEM
   remote: http://rubygems.org/
@@ -49,6 +49,6 @@ DEPENDENCIES
   jeweler (~> 1.8.3)
   mocha (= 0.9.9)
   rdiscount
-  rspec-rails23!
   sdoc
   sdoc-helpers
+  vibes-rspec-rails23!
