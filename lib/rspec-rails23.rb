@@ -1,4 +1,5 @@
 require 'rspec/core'
+require 'rspec/rails/example'
 require 'rspec/rails23/configuration'
 require 'rspec/rails23/transactional_database_support'
 require 'rspec/rails23/controllers'
