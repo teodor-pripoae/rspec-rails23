@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     vibes-rspec-rails23 (0.3.0)
-      actionpack (~> 2.3.0)
+      actionpack (~> 2.3.5)
       rspec (~> 2.8.0)
       vibes-rspec-rails23
 
