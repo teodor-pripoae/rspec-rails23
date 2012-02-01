@@ -1,7 +1,5 @@
 require 'rspec/core'
 require 'rspec/rails23/configuration'
-require 'rspec/rails23/matchers/controllers/redirect_to'
-require 'rspec/rails23/matchers/controllers/render_template'
 require 'rspec/rails23/transactional_database_support'
 require 'rspec/rails23/controllers'
 require 'rspec/rails23/helpers'

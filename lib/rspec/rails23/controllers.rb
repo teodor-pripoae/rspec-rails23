@@ -68,7 +68,7 @@ module Rspec
       end
 
       def self.extended(extended_behaviour)
-        extended_behaviour.send :include, ::ActionController::TestProcess, InstanceMethods, ::Rspec::Rails23::Matchers::Controllers
+        extended_behaviour.send :include, ::ActionController::TestProcess, InstanceMethods
         extended_behaviour.describes.send :include, RenderOverrides, ::ActionController::TestCase::RaiseActionExceptions
 
         extended_behaviour.before do
