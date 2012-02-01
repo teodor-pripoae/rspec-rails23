@@ -9,7 +9,10 @@ begin
     s.authors = ["Rob Sanheim"] 
     s.files =  FileList["[A-Z]*", "{bin,lib,spec}/**/*"] 
     s.add_dependency "actionpack", '~> 2.3.0'
-    s.add_dependency "rspec", '= 2.0.0.beta.8'
+    s.add_dependency "rspec", '~> 2.8.0'
+    s.add_development_dependency "sdoc"
+    s.add_development_dependency "sdoc-helpers"
+    s.add_development_dependency "rdiscount"
   end 
   Jeweler::GemcutterTasks.new
 rescue LoadError 
@@ -35,7 +38,6 @@ end
 task :default => [:spec]
 
 begin
-  %w{sdoc sdoc-helpers rdiscount}.each { |name| gem name }
   require 'sdoc_helpers'
 rescue LoadError => ex
   puts "sdoc support not enabled:"

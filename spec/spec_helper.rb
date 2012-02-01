@@ -2,15 +2,15 @@ lib_path = File.expand_path(File.dirname(__FILE__) + "/../lib")
 $LOAD_PATH.unshift lib_path unless $LOAD_PATH.include?(lib_path)
 
 require 'rubygems'
-gem "actionpack", '~> 2.3'
+require 'bundler/setup'
+
 require 'action_controller'
 
-gem "rspec-core", "~> 2.0.0.beta"
 require 'rspec/core'
 require 'rspec/core/formatters/base_text_formatter'
 require 'rspec-rails23'
 
-gem "mocha"
+#gem "mocha"
 
 module Rspec
   module Core

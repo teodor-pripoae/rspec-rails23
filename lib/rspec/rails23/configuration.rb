@@ -23,11 +23,11 @@ module Rspec
       end
       
       def enable_rails_specific_mocking_extensions(filter_options={})
-        case RSpec.configuration.mock_framework.to_s
-        when /mocha/i
+        case RSpec.configuration.mock_framework.framework_name
+        when :mocha
           require 'rspec/rails23/mocking/with_mocha'
           RSpec.configuration.include(::Rspec::Rails23::Mocking::WithMocha, filter_options)
-         when /rr/i
+         when :rr
           require 'rspec/rails23/mocking/with_rr'
           RSpec.configuration.include(::Rspec::Rails23::Mocking::WithRR, filter_options)
         end

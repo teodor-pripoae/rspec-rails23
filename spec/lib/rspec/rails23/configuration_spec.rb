@@ -33,7 +33,7 @@ describe RSpec::Core::Configuration do
     end
     
     example "#enable_Rails23_specific_mocking_extensions for mocha with no filter options" do
-      RSpec.configuration.mock_with :mocha
+      RSpec.configuration.mock_framework = :mocha
       RSpec.configuration.enable_rails_specific_mocking_extensions
       RSpec.configuration.include_or_extend_modules.should include([:include, Rspec::Rails23::Mocking::WithMocha, {}])
     end
