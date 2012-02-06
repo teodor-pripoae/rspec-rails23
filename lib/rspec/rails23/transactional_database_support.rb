@@ -10,6 +10,8 @@ module Rspec
 
         def transactional_protection_start
           return unless active_record_configured?
+          # TODO use ActiveRecord::TestFixure transactional support like current rspec-rails
+          return unless ::ActiveRecord::Base.connection.open_transactions == 0
 
           ::ActiveRecord::Base.connection.increment_open_transactions
           ::ActiveRecord::Base.connection.begin_db_transaction
