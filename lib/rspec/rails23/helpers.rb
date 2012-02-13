@@ -11,25 +11,7 @@ module Rspec
             false
           end
 
-          def session=(session)
-            @session = session
-          end
-
-          def request=(request)
-            @request = request
-          end
-
-          def flash=(flash)
-            @flash = flash
-          end
-
-          def params=(params)
-            @params = params
-          end
-
-          def controller=(controller)
-            @controller = controller
-          end
+          attr_writer :session, :request, :flash, :params, :controller
 
           private
           attr_reader :session, :request, :flash, :params, :controller
