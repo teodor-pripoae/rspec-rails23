@@ -36,7 +36,7 @@ module Rspec
         end
 
         def helper
-          @helper_object ||= returning HelperObject.new do |helper_object|
+          @helper_object ||= HelperObject.new.tap do |helper_object|
             if self.class.describes.class == Module
               helper_object.extend self.class.describes
             end
