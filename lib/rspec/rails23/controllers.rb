@@ -74,9 +74,10 @@ module Rspec
         extended_behaviour.before do
           @request = ::ActionController::TestRequest.new
           @response = ::ActionController::TestResponse.new
-          @controller = self.class.describes.new
+          @controller = subject
 
           @controller.request = @request
+          @controller.response = @response
           @controller.params = {}
           @controller.send(:initialize_current_url)
         end
