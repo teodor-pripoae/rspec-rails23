@@ -20,10 +20,6 @@ module Rspec
         RSpec.configuration.extend(::Rspec::Rails23::Helpers, filter_options)
       end
 
-      def enable_controller_support(filter_options={})
-        RSpec.configuration.extend(::Rspec::Rails23::Controllers, filter_options)
-      end
-
       def enable_rails_specific_mocking_extensions(filter_options={})
         case RSpec.configuration.mock_framework.framework_name
         when :mocha
@@ -39,9 +35,6 @@ module Rspec
         enable_active_record_transactional_support
         enable_helper_support :type => :helper, :example_group => {
           :file_path => escaped_path(%w[spec helpers])
-        }
-        enable_controller_support :type => :controller, :example_group => {
-          :file_path => escaped_path(%w[spec controllers])
         }
         enable_rails_specific_mocking_extensions
       end
