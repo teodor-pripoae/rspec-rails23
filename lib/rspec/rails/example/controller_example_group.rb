@@ -22,6 +22,10 @@ module RSpec
         ActionController::Routing::Routes.recognize_path(path, :method => method)
       end
 
+      def set_raw_post_data(body)
+        request.env['RAW_POST_DATA']=body
+      end
+
       # @private
       def controller_class
         described_class
@@ -45,6 +49,10 @@ module RSpec
             @controller.params = {}
             @controller.send(:initialize_current_url)
           end
+        end
+
+        after(:each) do
+          request.env.delete('RAW_POST_DATA')
         end
       end
     end
