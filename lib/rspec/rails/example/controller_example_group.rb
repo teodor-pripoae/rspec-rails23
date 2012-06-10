@@ -9,6 +9,9 @@ module RSpec
       include ActionController::TestProcess
       include ActionController::TestCase::Assertions
       include ActionController::TestCase::RaiseActionExceptions
+      include RSpec::Rails::ViewRendering
+      include RSpec::Rails::Matchers::RenderTemplate
+      include RSpec::Rails::Matchers::RedirectTo
 
       attr_reader :request, :response, :controller
 
@@ -56,5 +59,12 @@ module RSpec
         end
       end
     end
+  end
+end
+
+module ActionController
+  class Base
+    include TestCase::RaiseActionExceptions
+    include RSpec::Rails::ViewRendering::RenderOverrides
   end
 end
