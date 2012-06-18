@@ -19,4 +19,4 @@ end
 
 require 'rspec/rails/matchers/render_template'
 require 'rspec/rails/matchers/redirect_to'
-#require 'rspec/rails/matchers/routing_matchers'
+require 'rspec/rails/matchers/routing_matchers'
