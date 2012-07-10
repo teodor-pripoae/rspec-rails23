@@ -8,12 +8,13 @@ module RSpec::Rails::Matchers
       end
 
       def matches?(actual)
-        actual.valid?
+        @actual = actual
+        @actual.valid?
       end
 
       # @api private
       def failure_message_for_should
-        actual.errors.full_messages
+        @actual.errors.full_messages
       end
 
       # @api private
