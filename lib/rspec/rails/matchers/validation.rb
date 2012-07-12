@@ -12,6 +12,10 @@ module RSpec::Rails::Matchers
         @actual.valid?
       end
 
+      def description
+        "be valid"
+      end
+
       # @api private
       def failure_message_for_should
         @actual.errors.full_messages
