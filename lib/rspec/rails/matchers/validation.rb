@@ -1,7 +1,6 @@
 module RSpec::Rails::Matchers
   module Validation
-    class IsValid
-      include RSpec::Matchers::BaseMatcher
+    class IsValid < RSpec::Matchers::BuiltIn::BaseMatcher
 
       def initialize(scope)
         @scope = scope

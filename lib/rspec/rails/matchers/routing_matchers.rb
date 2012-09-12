@@ -21,8 +21,8 @@ module RSpec
           end
         end
 
-        class RouteTo #:nodoc:
-          include RSpec::Matchers::BaseMatcher
+        #:nodoc:
+        class RouteTo < RSpec::Matchers::BuiltIn::BaseMatcher
 
           def initialize(scope, expected)
             @scope = scope
@@ -73,8 +73,7 @@ module RSpec
           RouteTo.new(self, expected)
         end
 
-        class BeRoutable
-          include RSpec::Matchers::BaseMatcher
+        class BeRoutable < RSpec::Matchers::BuiltIn::BaseMatcher
 
           def initialize(scope)
             @scope = scope

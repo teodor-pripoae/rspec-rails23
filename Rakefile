@@ -9,7 +9,7 @@ begin
     s.authors = ["Matt Campbell", "Lance Cooper"] 
     s.files =  FileList["[A-Z]*", "{bin,lib,spec}/**/*"] 
     s.add_dependency "actionpack", '~> 2.3.5'
-    s.add_dependency "rspec", '~> 2.8.0'
+    s.add_dependency "rspec", '~> 2.11.0'
     s.add_development_dependency "sdoc"
     s.add_development_dependency "sdoc-helpers"
     s.add_development_dependency "rdiscount"
