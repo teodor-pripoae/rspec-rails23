@@ -1,13 +1,9 @@
 require 'rspec/core'
 require 'rspec/core/rake_task'
-if default = Rake.application.instance_variable_get('@tasks')['default']
-  default.prerequisites.delete('test')
-end
 
 spec_prereq = defined?(ActiveRecord::Base) ?  "db:test:prepare" : :noop
 
 task :noop do; end
-task :default => :spec
 
 task :stats => "spec:statsetup"
 
