@@ -1,22 +1,22 @@
-begin 
-  require 'jeweler' 
-  Jeweler::Tasks.new do |s| 
-    s.name = "vibes-rspec-rails23" 
+begin
+  require 'jeweler'
+  Jeweler::Tasks.new do |s|
+    s.name = "vibes-rspec-rails23"
     s.summary = "Rspec Rails for 2.3.5"
     s.email = ["matt.campbell@vibes.com", "lance.cooper@vibes.com"]
-    s.homepage = "http://github.com/vibes/rspec-rails23" 
+    s.homepage = "http://github.com/vibes/rspec-rails23"
     s.description = "Rails 2.3.5 Extension for Rspec 2"
-    s.authors = ["Matt Campbell", "Lance Cooper"] 
-    s.files =  FileList["[A-Z]*", "{bin,lib,spec}/**/*"] 
+    s.authors = ["Matt Campbell", "Lance Cooper"]
+    s.files =  FileList["[A-Z]*", "{bin,lib,spec}/**/*"]
     s.add_dependency "actionpack", '~> 2.3.5'
-    s.add_dependency "rspec", '~> 2.11.0'
+    s.add_dependency "rspec", '~> 2.12.0'
     s.add_development_dependency "sdoc"
     s.add_development_dependency "sdoc-helpers"
     s.add_development_dependency "rdiscount"
-  end 
+  end
   Jeweler::GemcutterTasks.new
-rescue LoadError 
-  puts "Jeweler, or one of its dependencies, is not available. Install it with: gem install jeweler" 
+rescue LoadError
+  puts "Jeweler, or one of its dependencies, is not available. Install it with: gem install jeweler"
 end
 
 require 'rspec/core/rake_task'

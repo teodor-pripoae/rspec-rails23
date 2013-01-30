@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Matt Campbell", "Lance Cooper"]
-  s.date = %q{2012-09-11}
+  s.date = %q{2013-01-29}
   s.description = %q{Rails 2.3.5 Extension for Rspec 2}
   s.email = ["matt.campbell@vibes.com", "lance.cooper@vibes.com"]
   s.extra_rdoc_files = [
@@ -83,8 +83,11 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<sdoc>, [">= 0"])
       s.add_development_dependency(%q<sdoc-helpers>, [">= 0"])
       s.add_development_dependency(%q<rdiscount>, [">= 0"])
+      s.add_development_dependency(%q<sdoc>, [">= 0"])
+      s.add_development_dependency(%q<sdoc-helpers>, [">= 0"])
+      s.add_development_dependency(%q<rdiscount>, [">= 0"])
       s.add_runtime_dependency(%q<actionpack>, ["~> 2.3.5"])
-      s.add_runtime_dependency(%q<rspec>, ["~> 2.11.0"])
+      s.add_runtime_dependency(%q<rspec>, ["~> 2.12.0"])
       s.add_development_dependency(%q<sdoc>, [">= 0"])
       s.add_development_dependency(%q<sdoc-helpers>, [">= 0"])
       s.add_development_dependency(%q<rdiscount>, [">= 0"])
@@ -109,8 +112,11 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<sdoc>, [">= 0"])
       s.add_dependency(%q<sdoc-helpers>, [">= 0"])
       s.add_dependency(%q<rdiscount>, [">= 0"])
+      s.add_dependency(%q<sdoc>, [">= 0"])
+      s.add_dependency(%q<sdoc-helpers>, [">= 0"])
+      s.add_dependency(%q<rdiscount>, [">= 0"])
       s.add_dependency(%q<actionpack>, ["~> 2.3.5"])
-      s.add_dependency(%q<rspec>, ["~> 2.11.0"])
+      s.add_dependency(%q<rspec>, ["~> 2.12.0"])
       s.add_dependency(%q<sdoc>, [">= 0"])
       s.add_dependency(%q<sdoc-helpers>, [">= 0"])
       s.add_dependency(%q<rdiscount>, [">= 0"])
@@ -136,8 +142,11 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<sdoc>, [">= 0"])
     s.add_dependency(%q<sdoc-helpers>, [">= 0"])
     s.add_dependency(%q<rdiscount>, [">= 0"])
+    s.add_dependency(%q<sdoc>, [">= 0"])
+    s.add_dependency(%q<sdoc-helpers>, [">= 0"])
+    s.add_dependency(%q<rdiscount>, [">= 0"])
     s.add_dependency(%q<actionpack>, ["~> 2.3.5"])
-    s.add_dependency(%q<rspec>, ["~> 2.11.0"])
+    s.add_dependency(%q<rspec>, ["~> 2.12.0"])
     s.add_dependency(%q<sdoc>, [">= 0"])
     s.add_dependency(%q<sdoc-helpers>, [">= 0"])
     s.add_dependency(%q<rdiscount>, [">= 0"])
