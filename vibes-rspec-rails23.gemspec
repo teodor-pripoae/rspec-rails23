@@ -4,13 +4,13 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{vibes-rspec-rails23}
+  s.name = "vibes-rspec-rails23"
   s.version = "0.3.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Matt Campbell", "Lance Cooper"]
-  s.date = %q{2013-01-29}
-  s.description = %q{Rails 2.3.5 Extension for Rspec 2}
+  s.date = "2013-03-19"
+  s.description = "Rails 2.3 Extension for Rspec 2"
   s.email = ["matt.campbell@vibes.com", "lance.cooper@vibes.com"]
   s.extra_rdoc_files = [
     "LICENSE",
@@ -54,10 +54,10 @@ Gem::Specification.new do |s|
     "spec/lib/rspec/rails23/configuration_spec.rb",
     "spec/spec_helper.rb"
   ]
-  s.homepage = %q{http://github.com/vibes/rspec-rails23}
+  s.homepage = "http://github.com/vibes/rspec-rails23"
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.6.2}
-  s.summary = %q{Rspec Rails for 2.3.5}
+  s.rubygems_version = "1.8.24"
+  s.summary = "Rspec Rails for 2.3"
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
@@ -86,8 +86,14 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<sdoc>, [">= 0"])
       s.add_development_dependency(%q<sdoc-helpers>, [">= 0"])
       s.add_development_dependency(%q<rdiscount>, [">= 0"])
+      s.add_development_dependency(%q<sdoc>, [">= 0"])
+      s.add_development_dependency(%q<sdoc-helpers>, [">= 0"])
+      s.add_development_dependency(%q<rdiscount>, [">= 0"])
+      s.add_development_dependency(%q<sdoc>, [">= 0"])
+      s.add_development_dependency(%q<sdoc-helpers>, [">= 0"])
+      s.add_development_dependency(%q<rdiscount>, [">= 0"])
       s.add_runtime_dependency(%q<actionpack>, ["~> 2.3.5"])
-      s.add_runtime_dependency(%q<rspec>, ["~> 2.12.0"])
+      s.add_runtime_dependency(%q<rspec>, ["~> 2.13.0"])
       s.add_development_dependency(%q<sdoc>, [">= 0"])
       s.add_development_dependency(%q<sdoc-helpers>, [">= 0"])
       s.add_development_dependency(%q<rdiscount>, [">= 0"])
@@ -115,8 +121,14 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<sdoc>, [">= 0"])
       s.add_dependency(%q<sdoc-helpers>, [">= 0"])
       s.add_dependency(%q<rdiscount>, [">= 0"])
+      s.add_dependency(%q<sdoc>, [">= 0"])
+      s.add_dependency(%q<sdoc-helpers>, [">= 0"])
+      s.add_dependency(%q<rdiscount>, [">= 0"])
+      s.add_dependency(%q<sdoc>, [">= 0"])
+      s.add_dependency(%q<sdoc-helpers>, [">= 0"])
+      s.add_dependency(%q<rdiscount>, [">= 0"])
       s.add_dependency(%q<actionpack>, ["~> 2.3.5"])
-      s.add_dependency(%q<rspec>, ["~> 2.12.0"])
+      s.add_dependency(%q<rspec>, ["~> 2.13.0"])
       s.add_dependency(%q<sdoc>, [">= 0"])
       s.add_dependency(%q<sdoc-helpers>, [">= 0"])
       s.add_dependency(%q<rdiscount>, [">= 0"])
@@ -145,8 +157,14 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<sdoc>, [">= 0"])
     s.add_dependency(%q<sdoc-helpers>, [">= 0"])
     s.add_dependency(%q<rdiscount>, [">= 0"])
+    s.add_dependency(%q<sdoc>, [">= 0"])
+    s.add_dependency(%q<sdoc-helpers>, [">= 0"])
+    s.add_dependency(%q<rdiscount>, [">= 0"])
+    s.add_dependency(%q<sdoc>, [">= 0"])
+    s.add_dependency(%q<sdoc-helpers>, [">= 0"])
+    s.add_dependency(%q<rdiscount>, [">= 0"])
     s.add_dependency(%q<actionpack>, ["~> 2.3.5"])
-    s.add_dependency(%q<rspec>, ["~> 2.12.0"])
+    s.add_dependency(%q<rspec>, ["~> 2.13.0"])
     s.add_dependency(%q<sdoc>, [">= 0"])
     s.add_dependency(%q<sdoc-helpers>, [">= 0"])
     s.add_dependency(%q<rdiscount>, [">= 0"])
